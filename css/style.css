@@ -1,0 +1,263 @@
+html{
+	width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+p,h1,h2,h3,h4,h4,h6,div,span {
+	font-family:PingFangSC-Regular,sans-serif,Microsoft JhengHei;	
+}
+
+p {
+	font-size: 20px;
+}
+
+.navbar-brand{
+	font-family: monospace;
+	font-weight: bold;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+.title_line {
+	margin-bottom: 50px;
+}
+
+/*nav選單*/
+@media (min-width: 768px) {
+	.navbar{
+	padding-left:50px!important;
+	padding-right:50px!important; 
+}
+}
+
+
+.navbar {
+	background-color: #C9E2EF;
+}
+
+.banner {
+	margin-top: 70px;
+}
+
+/*slide*/
+
+/*pics*/
+.pics{
+	padding: 35px 0;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #C9E2EF;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    width: 88%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.gallery-item {
+    flex-basis: 25%;
+    margin-bottom: 6px;
+    opacity: .85;
+    cursor: pointer;
+}
+.gallery-item:hover {
+    opacity: 1;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.lightbox {
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;              
+    overflow: auto;
+    top: 0;
+    left: 0;
+}
+.lightbox-content {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    margin: 5% auto;
+}
+.lightbox-content img {
+    border-radius: 7px;
+    box-shadow: 0 0 3px 0 rgba(225, 225, 225, .25);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 7px;
+    top: 45%;
+    cursor: pointer;
+}
+.lightbox-prev {
+    left: 0;
+}
+.lightbox-next {
+    right: 0;
+}
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    opacity: .8;
+}
+
+@media (max-width: 767px) {
+    .gallery-container {
+        width: 100%;
+    }
+    .gallery-item {
+        flex-basis: 49.80%;
+        margin-bottom: 3px;
+    }
+    .lightbox-content {
+        width: 80%;
+        height: 60%;
+        margin: 15% auto;
+    }
+}
+@media (max-width: 480px) {
+    .gallery-item {
+        flex-basis: 100%;
+        margin-bottom: 1px;
+    }
+    .lightbox-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+}
+
+
+
+/*關於我*/
+.about {
+	background-color: #F0E5DE;
+	padding-bottom:70px;
+}
+
+.about_pic img{
+	width: 100%;
+	height: auto;
+}
+
+.iam1{
+	text-align: right;
+}
+
+
+/*服務*/
+.service_pics img{
+	width: 100%;
+	height: auto;
+}
+
+.service_text{
+	text-align: center;
+}
+
+
+/*聯絡我表單*/
+.contact {
+	height:750px;
+	padding-top: 100px;
+	background-image: url(../img/contact_bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top center;
+}
+
+.contact .title {
+	color:#ffffff;
+	margin: 0;
+}
+
+.contact .title_line{
+	color:#ffffff;
+	margin: 10px 0;
+}
+
+
+.contact .form {
+	max-width: 600px;
+	margin:0 auto;
+	padding: 0 30px;
+	color:#ffffff;
+}
+
+.form input {
+	height: 40px;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 5px;
+	border:0px;
+	padding: 12px;
+	resize: vertical;
+	color: #000000;
+	margin:7.5px 0;
+}
+
+.form textarea {
+	height: 200px;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 5px;
+	border:0px;
+	padding: 12px;
+	resize: vertical;
+	color: #000000;
+	margin:7.5px 0;
+}
+
+input[type=submit] {
+  background-color: #5F9EA0;
+  color: white;
+  cursor: pointer;
+  width: 100px!important;
+  height: 48px;
+}
+
+input[type=submit]:hover {
+  background-color: #8ABCB8;
+}
+
+footer {
+	background-color: #FFE7E2;
+	padding:20px 0; 
+}
+
+footer p {
+	line-height: 30px;
+}
+
+.footer_icon img{
+	width: 8%;
+	height: auto;
+}
+
+@media (min-width: 768px) {
+/*nav選單*/
+	.navbar{
+	padding-left:50px!important;
+	padding-right:50px!important; 
+}
+}
